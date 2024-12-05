@@ -1,0 +1,30 @@
+# macOS specific files
+.DS_Store
+
+# Environment variables
+.env
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+
+# Egg metadata
+*.egg-info/
+dist/
+build/
+
+# Output files
+data/output/
+
+# Logs
+*.log
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+
