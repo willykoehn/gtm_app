@@ -1,4 +1,5 @@
-from sqlalchemy import Column, Integer, String, Float
+from sqlalchemy import Column, Integer, String, Float, ForeignKey
+from sqlalchemy.orm import relationship
 from gtm.models.base import Base
 
 class Lead(Base):
@@ -12,4 +13,12 @@ class Lead(Base):
     google_place_id = Column(String, unique=True, nullable=False)
     business_status = Column(String, nullable=True)
     place_type = Column(String, nullable=True)
+    phone_number = Column(String, nullable=True)  # New field for phone number
+    email = Column(String, nullable=True)         # New field for email
+    website = Column(String, nullable=True)       # New field for website URL
+    opening_hours = Column(String, nullable=True) # New field for opening hours (as JSON/text)
+
+    # Foreign key to Domain
+    domain_id = Column(Integer, ForeignKey('domains.id'), nullable=True)  
+    domain = relationship('Domain', back_populates='leads')  # Relationship to Domain model
 

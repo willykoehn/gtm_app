@@ -121,9 +121,15 @@ data/output/restaurants_leads.csv
 ---
 
 ## Roadmap
-- [x] Lead Generation
 - [ ] Market Research
+- [x] Lead Generation
 - [ ] Lead Enrichment
+    - Sentiment analysis
+    - Social media presence
+    - Revenue estimation
+    - Metadata analysis from website / google profile
+    - Unstructured tags
+    - Data completeness/quality score
 - [ ] Lead Scoring
 
 ---
