@@ -42,7 +42,7 @@
 2. Set up a virtual environment (recommended):
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scriptsctivate
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
 3. Install dependencies:
@@ -103,7 +103,7 @@ Fetching leads for query 'restaurants' within 5000 meters around 'Sydney, Austra
 Query Results:
 
 +------------------------+--------------------------+--------+-------------------+---------------------+-----------------+
-|          name          |         address         | rating | user_ratings_total |      place_id       | business_status |
+|          name          |         address         | rating | user_ratings_total |   google_place_id   | business_status |
 +------------------------+--------------------------+--------+-------------------+---------------------+-----------------+
 | The Sydney Restaurant | 123 Main St, Sydney      | 4.5    | 200               | abc123              | OPERATIONAL     |
 | Another Restaurant     | 456 Market St, Sydney   | 4.0    | 150               | def456              | OPERATIONAL     |
