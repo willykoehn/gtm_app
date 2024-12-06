@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String, Float, ForeignKey
 from sqlalchemy.orm import relationship
 from gtm.models.base import Base
+from gtm.models.domains import Domain
 
 class Lead(Base):
     __tablename__ = 'leads'
