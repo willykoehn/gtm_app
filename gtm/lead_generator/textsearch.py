@@ -52,7 +52,7 @@ def fetch_leads(lat: float, lng: float, radius: int, query: str, place_type: str
                 "address": place.get("formatted_address"),
                 "rating": place.get("rating"),
                 "user_ratings_total": place.get("user_ratings_total"),
-                "place_id": place.get("place_id"),
+                "google_place_id": place.get("place_id"),
                 "business_status": place.get("business_status"),
             }
             for place in results["results"]

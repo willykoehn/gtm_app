@@ -17,6 +17,12 @@ def save_to_csv(data: list, query: str, output_dir: str) -> str:
     os.makedirs(output_dir, exist_ok=True)
     file_name = f"{query.replace(' ', '_')}_leads.csv"
     file_path = os.path.join(output_dir, file_name)
+
+    # Ensure keys match expected column headers
+    for row in data:
+        row.setdefault("place_type", "Unknown")  # Default value if missing
+        row.setdefault("google_place_id", "Unknown")  # Rename key for consistency
+
     pd.DataFrame(data).to_csv(file_path, index=False)
     return file_path
 
