@@ -121,10 +121,24 @@ data/output/restaurants_leads.csv
 ---
 
 ## Roadmap
+- [ ] Market Research (MVP)
+    - [ ] Product information input (MVP)
+    - [ ] Keyword extraction (MVP)
+    - [ ] Retrieve trend data (MVP)
+    - [ ] Return segments (downstream search query) (MVP)
 - [x] Lead Generation
-- [ ] Market Research
-- [ ] Lead Enrichment
-- [ ] Lead Scoring
+    - [ ] Google search -> domains
+    - [ ] LinkedIn profiles
+- [x] Lead Enrichment
+    - [ ] Sentiment analysis
+    - [ ] Social media presence
+    - [ ] Revenue estimation
+    - [ ] Unstructured tags
+    - [ ] Data completeness / quality scores
+    - [ ] Website / Google profile / product / content metadata analysis
+- [ ] Lead Scoring (MVP)
+- [ ] Orchestration
+    - [ ] Lead -> CRM
 
 ---
 
