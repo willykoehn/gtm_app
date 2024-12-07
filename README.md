@@ -130,10 +130,12 @@ data/output/restaurants_leads.csv
     - [ ] Google search -> domains
     - [ ] LinkedIn profiles
 - [x] Lead Enrichment
+    - [ ] Sentiment analysis
+    - [ ] Social media presence
     - [ ] Revenue estimation
     - [ ] Unstructured tags
     - [ ] Data completeness / quality scores
-    - [ ] Website / product / content metadata analysis
+    - [ ] Website / Google profile / product / content metadata analysis
 - [ ] Lead Scoring (MVP)
 - [ ] Orchestration
     - [ ] Lead -> CRM
