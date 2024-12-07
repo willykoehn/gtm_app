@@ -3,6 +3,8 @@ from dotenv import load_dotenv
 from tabulate import tabulate
 from gtm.lead_generator.manager import LeadManager
 from gtm.lead_generator.utils import save_to_csv
+from gtm.models.leads import Lead
+from gtm.models.domains import Domain
 
 # Load environment variables
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
